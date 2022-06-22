@@ -1,25 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
+import { Route, Routes } from 'react-router-dom';
+import './App.scss';
+import Home from './pages/Home/Home';
+import About from './pages/About/About';
+import { MainTemplate } from './templates/MainTemplate/MainTemplate';
+import WebFont from 'webfontloader';
+
+import Works from './pages/Works/Works';
+import Contact from './pages/Contact/Contact';
 
 function App() {
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='App'>
+      <Routes>
+        {/* <Route path='home' element={<Home/>}></Route>
+        <Route path='about' element={<About/>}></Route> */}
+        <Route path='/' element={<MainTemplate Component={Home} />} />
+        <Route path='home' element={<MainTemplate Component={Home} />} />
+        <Route path='about' element={<MainTemplate Component={About} />} />
+        
+        <Route path='works' element={<MainTemplate Component={Works} />} />
+        <Route path='contact' element={<MainTemplate Component={Contact} />} />
+      </Routes>
     </div>
+
   );
 }
+
+
 
 export default App;

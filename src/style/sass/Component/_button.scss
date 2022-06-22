@@ -1,0 +1,15 @@
+.button-pink{
+    border-radius: $border-radius-0;
+    @include styleButton($pd-2,$pd-3,$color-white-0,$color-pink-0,$fs-0,$color-pink-0,$font-weight-700);
+    a{
+        color: $color-white-0;
+        &:hover{
+            color: $color-white-0;
+        }
+    }
+    &:hover{
+        color: $color-white-0;
+        transform: scale($scale-0);
+        transition: 1s;
+    }
+}

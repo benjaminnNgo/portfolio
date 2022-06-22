@@ -1,0 +1,23 @@
+*{
+    margin: $mg-0;
+    padding: $pd-0;
+    box-sizing: border-box;
+}
+body{
+    font-size: $fs-0 !important;
+    font-family: 'Rubik', sans-serif !important;
+    color: $color-white-0 !important;
+    background-color:$color-purple-0 !important;
+    line-height: $line-height-0;
+}
+
+h1{
+    color: $color-white-0 !important;
+}
+.main-content{
+    margin-left: $mg-5;
+    @include responsive("large"){
+        margin: auto;
+    }
+}
+

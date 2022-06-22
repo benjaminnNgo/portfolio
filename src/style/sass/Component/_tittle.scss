@@ -1,0 +1,21 @@
+.tittle{
+    @include styleText($fs-2,$color-white-0!important,$font-weight-700!important);
+    padding-top: $pd-4 ;
+    margin-bottom: 0!important;
+    padding-bottom: $pd-4;
+    text-align: right;
+    padding: $pd-4 $pd-4 $pd-4 0 ;
+    @include responsive('screen-1'){
+        font-size: $fs-2 - 4;
+        padding-right: $pd-3;
+    }
+}
+.tittle-area{
+    position: relative;
+    .layer{
+        position: absolute;
+        top: 36%;
+        right:3%;
+        z-index: -1;
+    }
+}

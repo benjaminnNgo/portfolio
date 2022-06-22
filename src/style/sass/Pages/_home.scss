@@ -1,0 +1,83 @@
+.home{
+    height: 100vh;
+    min-height: 100vh;
+    position: relative;
+    .intro{
+        position: relative;
+        z-index: 1;
+        max-width: 540px;
+        .my_name{
+            @include styleText($fs-2,$color-white-0,$font-weight-700);
+        }
+        a{
+            color: $color-white-0;
+            
+            .social-icon{
+                font-size: $fs-1;
+                margin: 0 $mg-1;
+            }
+            
+        }
+        .social-icon{
+            transition: 0.5s;
+            &:hover{
+                color: $color-yellow-0 ;
+            }
+        }
+        
+    }
+    .parallax{
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        *{
+            position: absolute;
+        }
+        .p1{
+            left: 5%;
+            top: 0%;
+        }
+        .p2{
+            left: 9%;
+            top: 53%;
+        }
+        .p3{
+            left: 15%;
+            top: 75%;
+        }
+        .p4{
+            left: 45%;
+            top: 11%;
+        }
+        .p5{
+            left: 0%;
+            top: 36%;
+        }
+        .p6{
+            left: 68%;
+            top: 3%;
+        }
+        .p7{
+            left: 65%;
+            top: 50%;
+        }
+        .p8{
+            left: 78%;
+            top: 72%;
+        }
+        .p9{
+            left: 18%;
+            top: 23%;
+        }
+        .p10{
+            left: 75%;
+            top: 22%;
+        }
+        .p11{
+            left: 48%;
+            top: 82%;
+        }
+    }
+}

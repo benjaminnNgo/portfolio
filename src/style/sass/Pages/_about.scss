@@ -1,0 +1,151 @@
+#about{
+    width: 100%;
+    margin: auto;
+    position: relative;
+    
+    .inform{
+        width: 90%;
+       margin: auto;
+        
+        .inform-text{
+            font-family: "Source Serif Pro", serif;
+            font-style: italic;
+            @include styleText($fs-0 + 2,$color-white-0,$font-weight-300);
+            line-height: 44px;
+        }
+        .inform-detail{
+            overflow-x: hidden;
+            position: relative;
+            background-color: $color-white-0;
+            border-radius: $border-radius-1;
+            background-color: $color-purple-1;
+            margin: 0 $mg-2 + 5;
+            min-height: 250px;
+            padding: $pd-5 ;
+            
+        }
+    }
+    .preference-tittle{
+        text-align: left;
+        position: relative;
+        padding-right: 0;
+        padding-left: $pd-4;
+        svg{
+            position: absolute;
+            top: 32%;
+            left: 4%;
+            z-index: -1;
+        }
+    }
+    .preference{
+        
+       
+        padding-bottom: $pd-4 ;
+        width: 70vw;
+        margin:  auto;
+        .slide-area{
+            .professor-name{
+                @include styleText($fs-0,$color-white-0,$font-weight-600);
+            }
+            img{
+                margin: $mg-6 auto;
+
+            }
+           .professor{
+               color: $color-purple-2;
+              
+           }
+           .review{
+               border-radius: $border-radius-0;
+               margin: auto;
+               max-width: 700px;
+               background-color: $color-purple-1;
+               min-height: 120px;
+               font-family: "Source Serif Pro", serif;
+               font-style: italic;
+               @include styleText($fs-0,$color-white-0,$font-weight-300);
+               text-align: left;
+               padding: $pd-6;
+           }
+        }
+    }
+    .education{
+        margin: auto;
+        width: 95%;
+        padding-bottom: $pd-4;
+        .timeline,.skill{
+            width: 95%;
+            min-height: 500px;
+            background-color: $color-purple-1;
+            padding: $pd-6;
+            margin: auto;
+            border-radius: $border-radius-2;
+            
+            .timeline-item{
+                border-left: $border-weight solid $color-pink-0 ;
+                padding-bottom: $mg-7 - 20;
+                padding-left: $pd-6;
+                width: 100%;
+                position: relative;
+                
+                .time{
+                    @include styleText($fs-3,$color-purple-2,$font-weight-400);
+                    margin-bottom: $mg-2;
+                }
+                .timeline-institution{
+                    @include styleText($fs-4,$color-white-0,$font-weight-700);
+                }
+                .timeline-icon{
+                    position: absolute;
+                    left: -3.55%;
+                    top: -7%;
+                    z-index: 10;
+                    font-size: $fs-1 - 1;
+                    color: $color-pink-0;
+                    padding: $pd-1 0;
+                    background-color: $color-purple-1;
+                }
+            }
+            .progress{
+                .html{
+                    .ant-progress-bg{
+                        background-color: $color-pink-0;
+                    }
+                }
+                .js{
+                    .ant-progress-bg{
+                        background-color: $color-yellow-0;
+                    }
+                }
+                .reactjs{
+                    .ant-progress-bg{
+                        background-color: $color-purple-3;
+                    }
+                }
+                padding: 0 $pd-6 $pd-6 $pd-6;
+            }
+            .tick-part{
+                li{
+                    padding: 0 0 $pd-1 $pd-6;
+                    svg{
+                        margin-right: $mg-6;
+                    }
+                }
+            }
+            
+        }
+    }
+    @include responsive('medium'){
+        .inform{
+            .inform-text{
+                font-size: $fs-0;
+            }
+        }
+    }
+    @include responsive('screen-1'){
+        .preference-tittle{
+            padding-left: $pd-3;
+            
+        }
+    }
+}

@@ -1,0 +1,46 @@
+.Typewriter{
+    display: inline !important;
+}
+.sidebar{
+  
+    .ant-layout {
+      height: 100%;
+      .ant-layout-sider{
+        background-color: $color-purple-0;
+        height: 100%;
+        .ant-layout-sider-children{
+          height: 100%;
+          display: flex;
+          align-items: center;
+          flex-direction: column;
+          justify-content: space-around;
+        }
+      }
+    }
+  }
+  .ant-progress{
+    .ant-progress-text{
+      @include styleText($fs-3,$color-white-0,$font-weight-400)
+    }
+  }
+
+  
+  .ant-carousel{
+    
+    .slick-slider{
+      .slick-dots-bottom{
+        bottom: 1%;
+      }
+    }
+    @include responsive('medium'){
+      .slick-slider{
+        .slick-dots-bottom{
+          bottom: -8%;
+        }
+      }
+    }
+  }
+  
+  
+  
+  

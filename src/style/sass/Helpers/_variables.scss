@@ -1,0 +1,74 @@
+//Font size
+$fs-0:16px;
+$fs-1:25px;
+$fs-2:36px;
+$fs-3:14px;
+$fs-4:20px;
+//Margin
+$mg-0:0px;
+$mg-1:20px;
+$mg-2:10px;
+$mg-3:30px;
+$mg-4:35px;
+$mg-5:200px;
+$mg-6:8px;
+$mg-7:50px;
+//Padding
+$pd-0:0;
+$pd-1:8px;
+$pd-2:12px;
+$pd-3:32px;
+$pd-4:60px;
+$pd-5:20px;
+$pd-6:30px;
+
+//Color
+$color-white-0: #FFFFFF;
+$color-purple-0: #353353;
+$color-purple-1:#302F4E;
+$color-purple-2:#8B88B1;
+$color-purple-3:rgba(108, 108, 229,0.8);
+$color-pink-0: #FF4C60;
+$color-yellow-0:#F9CC5B;
+$color-yellow-1:#FFD15C;
+$color-grey-0:#9C9AB3;
+$color-grey-1:#454360;
+$color-black-0:#000000;
+$color-blue-0:#44D7B6;
+$color-red-0:#ff0000;
+// Font weight
+$font-weight-300: 300;
+$font-weight-400: 400;
+$font-weight-600: 600;
+$font-weight-700: 700;
+
+//Line height
+$line-height-0:1.7;
+$line-height-1:42px;
+//Border radius
+$border-radius-0:30px;
+$border-radius-1:10px;
+$border-radius-2:20px;
+
+//Border weight
+$border-weight:2px;
+
+// Scale ratio
+$scale-0:1.2;
+
+//Size:
+$size-0:40px;
+$size-1:60px;
+
+//transition
+$animation-0:cubic-bezier(0.075, 0.82, 0.165, 1) 1s;
+
+//Break points
+$breakpoints:(
+    'extra-large':1200px,
+    'large':992px,
+    'medium':768px,
+    'small':576px,
+    'screen-0':1290px,
+    'screen-1':500px,
+)

@@ -1,0 +1,62 @@
+
+.sideBar{
+  position: fixed;
+  z-index: 100;
+  display: block;
+  height: 100%;
+  .my_logo{
+    @include styleText($fs-1,$color-white-0,$font-weight-600);
+    .my_logo_dot{
+      color: $color-pink-0;
+    }
+  }
+  .navList{
+    .nav-link{
+      @include styleText($fs-0,$color-white-0,$font-weight-600)
+    }
+    line-height: $line-height-0;
+    
+    li{
+      margin: $mg-1 0;
+      a{
+        align-items: center;
+        transition: 0.5s;
+        &:hover{
+          color: $color-pink-0;
+          
+        }
+        &.active{
+          color: $color-pink-0;
+        }
+      }
+      .nav_icon{
+        margin: $mg-0 $mg-2 $mg-0 $mg-3;
+        font-size: $fs-1;
+      }
+    }
+  }
+  .copyright{
+    @include styleText($fs-3,$color-grey-0,$font-weight-400)
+  }
+  .ant-layout-sider-zero-width-trigger{
+    background: transparent;
+    top: 4%;
+    right: -70px;
+    .anticon{
+      svg{
+        display: 10;
+        width: 2em;
+        height: 2em;
+      }
+    }
+    &:hover{
+      &::after{
+        background: transparent;
+      }
+      
+    }
+  }
+  @include responsive('large'){
+    position: absolute;
+  }
+}

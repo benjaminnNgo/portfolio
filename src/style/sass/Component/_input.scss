@@ -1,0 +1,26 @@
+.email-input{
+    min-height: 80px;
+    .form-control{
+        display: block;
+        border-radius: $border-radius-0;
+        width: 100%;
+        height: $size-1;
+        padding: $pd-1 + 2 $pd-3 - 2;
+        
+        font-weight: 400;
+        line-height: $line-height-0 - 0.1;
+        background-color:$color-white-0 ;
+        @include styleText($fs-0,$color-grey-1,$font-weight-400);
+        background-image: none;
+        border: 0;
+        &:focus-visible{
+            outline: none;
+        }
+    }
+    .error{
+        position: absolute;
+        padding-top: $pd-1 + 2;
+        padding-left: $pd-3 - 2;
+        @include styleText($fs-0 - 2,$color-red-0,$font-weight-300)
+    }
+}

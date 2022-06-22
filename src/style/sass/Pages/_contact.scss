@@ -1,0 +1,18 @@
+#contact{
+    h3{
+        @include styleText($fs-4 + 3,$color-white-0,$font-weight-700);
+    }
+    .form{
+        padding: 0 $pd-3;
+    }
+    .contact-main{
+        .contact-email{
+            transition: 0.5s;
+            color: $color-pink-0;
+            &:hover{
+                color: $color-white-0;
+            }
+        }
+    }
+    
+}
